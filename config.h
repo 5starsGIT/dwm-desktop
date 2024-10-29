@@ -22,16 +22,16 @@ static const char *colors[][3]      = {
 };
 
 static const char *const autostart[] = {
-    "/usr/bin/pipewire", "&", NULL,
-    "/usr/bin/pipewire-pulse", "&", NULL,
-    "/usr/bin/pipewire-media-session", "&", NULL,
-    "xset", "s", "off", "&&", "xset", "-dpms", NULL,
-    "/home/alex/Documents/Scripts/desktop-alex-status-dwm.sh", NULL,
-	"dunst", NULL,
-	"picom", NULL,
-	"feh", "--bg-scale", "/home/alex/Pictures/Rosepine-MayHeRest3.PNG", NULL,
-    "/usr/bin/syncthing", "serve", "--no-browser", "--logfile=default", NULL,
-	NULL /* terminate */
+  "/usr/bin/pipewire", "&", NULL,
+  "/usr/bin/pipewire-pulse", "&", NULL,
+  "/usr/bin/pipewire-media-session", "&", NULL,
+//  "xset", "s", "off", "&&", "xset", "-dpms", NULL,
+  "/home/alex/Documents/Scripts/desktop-alex-status-dwm.sh", NULL,
+  "dunst", NULL,
+  "picom", NULL,
+  "feh", "--bg-scale", "/home/alex/Pictures/Solarized.png", NULL,
+  "/usr/bin/syncthing", "serve", "--no-browser", "--logfile=default", NULL,
+  NULL /* terminate */
 };
 
 /* tagging */
@@ -79,20 +79,20 @@ static const char *medprevcmd[] = { "playerctl", "previous", NULL };
 // static const char *upvol[]      = { "pactl",   "set-sink-volume", "0",      "+5%",      NULL };
 // static const char *downvol[]    = { "pactl",   "set-sink-volume", "0",      "-5%",      NULL };
 // static const char *mutevol[]    = { "pactl",   "set-sink-mute",   "0",      "toggle",   NULL };
-static const char *upvol[]    = { "/usr/bin/wpctl",   "set-volume",   "@DEFAULT_AUDIO_SINK@",      "5%+",   NULL };
-static const char *downvol[]    = { "/usr/bin/wpctl",   "set-volume", "@DEFAULT_AUDIO_SINK@",      "5%-",      NULL };
-static const char *mutevol[]    = { "/usr/bin/wpctl",   "set-mute",   "@DEFAULT_AUDIO_SINK@",      "toggle",   NULL };
+static const char *upvol[]      = { "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@",      "5%+",      NULL };
+static const char *downvol[]    = { "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@",      "5%-",      NULL };
+static const char *mutevol[]    = { "wpctl", "set-mute",   "@DEFAULT_AUDIO_SINK@",      "toggle",   NULL };
 
 static const char *light_up[]   = { "brightnessctl", "s", "5%+", NULL };
 static const char *light_down[]   = { "brightnessctl", "s", "5%-", NULL };
-static const char *screenshot[]   = { "/home/alex/Documents/Scripts/takeScreenShot", NULL };
+static const char *screenshot[]   = { "/home/alex/Documents/Scripts/tkscrs", NULL };
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
-static const char *desktop_dmenucmd[] = { "/home/alex/Documents/Scripts/desktop-dmenu", NULL };
+static const char *desktop_dmenucmd[] = { "/home/alex/Documents/Scripts/dskdm", NULL };
 static const char *termcmd[]  = { "kitty", NULL };
-static const char *filecmd[]  = { "nemo", NULL };
+static const char *filecmd[]  = { "thunar", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
