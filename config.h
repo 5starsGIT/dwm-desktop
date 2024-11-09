@@ -10,12 +10,12 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const int focusonwheel       = 0;
 static const char *fonts[]          = { "Firacode Nerd Font:size=12" };
 static const char dmenufont[]       = "Firacode Nerd Font:size=12";
-static const char selfgcolor[]      = "#191724";
-static const char normbgcolor[]     = "#1f1d2e";
-static const char normbordercolor[] = "#26233a";
+static const char normbgcolor[]     = "#232136";
+static const char normbordercolor[] = "#2a273f";
 static const char normfgcolor[]     = "#908caa";
-static const char selbordercolor[]  = "#9ccfd8";
+static const char selfgcolor[]      = "#232136";
 static const char selbgcolor[]      = "#c4a7e7";
+static const char selbordercolor[]  = "#c4a7e7";
 static const char *colors[][3]      = {
 	[SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
 	[SchemeSel]  = { selfgcolor, selbgcolor,  selbordercolor },
