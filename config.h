@@ -29,7 +29,7 @@ static const char *const autostart[] = {
   "/home/alex/Documents/Scripts/desktop-alex-status-dwm.sh", NULL,
   "dunst", NULL,
   "picom", NULL,
-  "feh", "--bg-scale", "/home/alex/Pictures/Solarized.png", NULL,
+  "feh", "--bg-scale", "/home/alex/Pictures/pine/wallpapers/bay.JPG", NULL,
   "/usr/bin/syncthing", "serve", "--no-browser", "--logfile=default", NULL,
   NULL /* terminate */
 };
