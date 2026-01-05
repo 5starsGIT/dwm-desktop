@@ -26,10 +26,9 @@ static const char *const autostart[] = {
   // "/usr/bin/pipewire-pulse", "&", NULL,
   // "/usr/bin/pipewire-media-session", "&", NULL,
 //  "xset", "s", "off", "&&", "xset", "-dpms", NULL,
-  "/home/alex/Documents/Scripts/desktop-alex-status-dwm.sh", NULL,
-  "dunst", NULL,
-  "picom", NULL,
-  "feh", "--bg-scale", "/home/alex/Pictures/pine/wallpapers/bay.JPG", NULL,
+  // "/home/alex/Documents/Scripts/desktop-alex-status-dwm.sh", NULL,
+  // "dunst", NULL,
+  // "feh", "--bg-scale", "/home/alex/Pictures/pine/wallpapers/bay.JPG", NULL,
   // "/usr/bin/syncthing", "serve", "--no-browser", "--logfile=default", NULL,
   NULL /* terminate */
 };
