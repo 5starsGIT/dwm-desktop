@@ -8,8 +8,8 @@ static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const int focusonwheel       = 0;
-static const char *fonts[]          = { "Firacode Nerd Font:size=12" };
-static const char dmenufont[]       = "Firacode Nerd Font:size=12";
+static const char *fonts[]          = { "monospace:size=12" };
+static const char dmenufont[]       = "monospace:size=12";
 static const char normbgcolor[]     = "#232136";
 static const char normbordercolor[] = "#2a273f";
 static const char normfgcolor[]     = "#908caa";
@@ -21,17 +21,9 @@ static const char *colors[][3]      = {
 	[SchemeSel]  = { selfgcolor, selbgcolor,  selbordercolor },
 };
 
-static const char *const autostart[] = {
-  // "/usr/bin/pipewire", "&", NULL,
-  // "/usr/bin/pipewire-pulse", "&", NULL,
-  // "/usr/bin/pipewire-media-session", "&", NULL,
-//  "xset", "s", "off", "&&", "xset", "-dpms", NULL,
-  // "/home/alex/Documents/Scripts/desktop-alex-status-dwm.sh", NULL,
-  // "dunst", NULL,
-  // "feh", "--bg-scale", "/home/alex/Pictures/pine/wallpapers/bay.JPG", NULL,
-  // "/usr/bin/syncthing", "serve", "--no-browser", "--logfile=default", NULL,
-  NULL /* terminate */
-};
+// static const char *const autostart[] = {
+  // NULL /* terminate */
+// };
 
 /* tagging */
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
